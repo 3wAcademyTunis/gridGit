@@ -1,0 +1,48 @@
+.wrapper {
+   width:80vw;
+   height:90vh;
+   margin:auto;
+    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  grid-template-rows: (100px, auto);
+
+  border:1px solid grey;
+}
+
+.two { 
+	background-color: blue;
+ /* grid-column: 2 / 4;
+  grid-row: 1 / 3;*/
+
+  grid-area: 1/2/3/4;
+}
+.three {
+	background-color: green;
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+	background-color: yellow;
+  grid-column: 3;
+  grid-row: 3;
+
+}
+.five {
+	background-color: black;
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+	background-color: gray;
+  grid-column: 3;
+  grid-row: 4;
+}
+.one {
+background-color: red;
+  /*grid-column: 1 / 1;
+  grid-row: 1/4;*/
+  grid-area: 1/1/2/3;
+ order:1;
+}
